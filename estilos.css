@@ -139,3 +139,49 @@ label {
     text-align: center;
   }
 }
+/* Estilo grid para secciones con varios artículos */
+.seccion-estilo article {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columnas en escritorio */
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .seccion-estilo article figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Imágenes responsive */
+  figure img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Responsive para móviles */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.8rem;
+    }
+  
+    section {
+      padding: 1rem;
+    }
+  
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .seccion-estilo article {
+      grid-template-columns: 1fr; /* 1 columna en móvil */
+    }
+  }
+  
