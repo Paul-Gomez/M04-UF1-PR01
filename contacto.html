@@ -1,5 +1,54 @@
-<section>
-    <h1>Contacto</h1>
-    <p>Muy pronto podrás escribirnos desde aquí. ¡Estudia con nosotros!</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto | EstudiaSmart</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" href="img/logo.png">
+</head>
+<body>
+
+  <header>
+    <img src="img/logo.png" alt="Logo EstudiaSmart" width="100">
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="metodos.html">Métodos</a></li>
+        <li><a href="apps.html">Apps</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="seccion-estilo">
+    <h1>Contáctanos</h1>
+    <p>¿Tienes dudas o sugerencias? Rellena el siguiente formulario.</p>
+
+    <form id="formulario-contacto">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required placeholder="Tu nombre">
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" required placeholder="tucorreo@email.com">
+
+      <label for="motivo">Motivo de contacto:</label>
+      <select id="motivo" required>
+        <option value="">-- Selecciona un motivo --</option>
+        <option value="consulta">Consulta</option>
+        <option value="sugerencia">Sugerencia</option>
+        <option value="colaboracion">Colaboración</option>
+      </select>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <p id="mensaje-confirmacion" class="mensaje-confirmacion"></p>
   </section>
-  
+
+  <footer>
+    <p>© 2025 EstudiaSmart - Técnicas de Estudio</p>
+  </footer>
+
+  <script src="formulario.js"></script>
+</body>
+</html>
